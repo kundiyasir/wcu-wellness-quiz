@@ -69,7 +69,6 @@
     max-width: 620px;
   }
 
-  /* INTRO */
   #intro { text-align: center; }
 
   .start-btn {
@@ -88,7 +87,6 @@
   }
   .start-btn:hover { transform: translateY(-2px); box-shadow: 0 0 36px rgba(46,204,113,0.5); }
 
-  /* QUESTION */
   #question-screen { display: none; }
 
   .progress-bar-wrap {
@@ -195,7 +193,6 @@
   .next-btn:hover { background: rgba(46,204,113,0.1); }
   .next-btn.show { display: block; }
 
-  /* RESULTS */
   #results { display: none; text-align: center; }
 
   .score-ring {
@@ -266,7 +263,6 @@
 
 <div class="quiz-wrap">
 
-  <!-- INTRO -->
   <div id="intro" class="fade-up">
     <div class="badge">WCU WELLNESS PROMOTION</div>
     <h1>Think You Know<br>The <span>Facts?</span></h1>
@@ -274,7 +270,6 @@
     <button class="start-btn" onclick="startQuiz()">START QUIZ →</button>
   </div>
 
-  <!-- QUESTION SCREEN -->
   <div id="question-screen">
     <div class="progress-bar-wrap">
       <div class="progress-bar-fill" id="progress-fill" style="width:0%"></div>
@@ -291,7 +286,6 @@
     <button class="next-btn" id="next-btn" onclick="nextQuestion()">NEXT QUESTION →</button>
   </div>
 
-  <!-- RESULTS -->
   <div id="results">
     <div class="badge">QUIZ COMPLETE</div>
     <div class="score-ring">
@@ -307,8 +301,7 @@
 
 <div class="wcu-footer">
   Wellness Promotion · Commonwealth Hall, Ground Floor · 610-436-0730<br>
-  <a href="https://www.wcupa.edu/wellness" target="_blank">wcupa.edu/wellness</a> · @wcuwellnesspromotion<br><br>
-  Funded by a grant from the Pennsylvania Liquor Control Board.
+  <a href="https://www.wcupa.edu/wellness" target="_blank">wcupa.edu/wellness</a> · @wcuwellnesspromotion
 </div>
 
 <script>
@@ -394,7 +387,6 @@ function loadQuestion() {
   fb.innerHTML = '';
   document.getElementById('next-btn').className = 'next-btn';
 
-  // animate
   const card = document.getElementById('q-card');
   card.classList.remove('fade-up');
   void card.offsetWidth;
